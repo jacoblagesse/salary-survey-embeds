@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Salary Survey Embeds</title>
+  
+  <script src="https://pym.nprapps.org/pym.v1.js"></script>
+</head>
+
+<body>
+  <div id="observablehq-colLicensee-d8616c7a"></div>
+  
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@jacoblagesse/public-media-salary-survey-interactives.js?v=3";
+  new Runtime().module(define, name => {
+    if (name === "colLicensee") return new Inspector(document.querySelector("#observablehq-colLicensee-d8616c7a"));
+  });
+  </script>
+  <script>var pymChild = new pym.Child();</script>
+</body>
+</html>
