@@ -10,14 +10,14 @@
 </head>
 
 <body>
-  <div id="observablehq-usmap-e56b2fb7"></div>
+  <div id="observablehq-genderSalary-d8616c7a"></div>
 
   <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@jacoblagesse/public-media-salary-survey-interactives.js?v=3";
-    new Runtime().module(define, name => {
-      if (name === "usmap") return new Inspector(document.querySelector("#observablehq-usmap-e56b2fb7"));
-    });
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@jacoblagesse/public-media-salary-survey-interactives.js?v=3";
+  new Runtime().module(define, name => {
+    if (name === "genderSalary") return new Inspector(document.querySelector("#observablehq-genderSalary-d8616c7a"));
+  });
   </script>
   <script>var pymChild = new pym.Child();</script>
 </body>
