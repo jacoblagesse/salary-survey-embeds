@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Salary Survey Embeds</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   
   <script src="https://pym.nprapps.org/pym.v1.js"></script>
   <style>
@@ -16,16 +17,13 @@
 
 <body>
   <div style="display: flex;">
-    <div id="observablehq-map-d5734123"></div>
-    <div id="observablehq-map2-d5734123"></div>
-  </div>
-
+    <div id="observablehq-map-16d40092"></div>
+  </div>    
   <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
     import define from "https://api.observablehq.com/@jacoblagesse/us-map-testing.js?v=3";
     new Runtime().module(define, name => {
-      if (name === "map") return new Inspector(document.querySelector("#observablehq-map-d5734123"));
-      if (name === "map2") return new Inspector(document.querySelector("#observablehq-map2-d5734123"));
+      if (name === "map") return new Inspector(document.querySelector("#observablehq-map-16d40092"));
     });
   </script>
   <script>var pymChild = new pym.Child({ polling: 500 });</script>
